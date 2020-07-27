@@ -51,9 +51,9 @@ module.exports = class KagApi {
 
 async subreddit(reddit) {
 if (!reddit) throw Error('Please enter subreddit');
-   const subreddit = await axios.get('https://imgur.com/r/'+reddit+'/hot.json').then(res => res)
-  if (typeof reddit !== 'string') throw Error('The value of async function find isn\'t a string!')
-    const data = subreddit.data[Math.floor(Math.random() * 1000)];
+   const { body: subreddits } = await request.get('https://imgur.com/r/'+reddit+'/hot.json')
+  if (typeof reddit !== 'string') throw Error('The value of async function find isn\'t a string!');
+    const data = subreddits.data[Math.floor(Math.random() * 1000)];
 return data;
 };
 };
