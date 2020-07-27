@@ -51,7 +51,7 @@ module.exports = class KagApi {
 async subreddit() {
 function reddit(string) { 
 if (typeof string !== "string") throw new TypeError("Type A Subreddit Please!"); 
-return string;
+return reddit(string);
 };
    const { body: subreddit } = await request.get(`https://imgur.com/r/${reddit(string)}/hot.json`);
 const data = subreddit.data[Math.floor(Math.random() * 1000)];
