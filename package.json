@@ -1,18 +1,21 @@
 {
   "name": "@kagchi/kag-api",
-  "version": "1.1.2",
+  "version": "1.1.1-dev",
   "description": "a simple api wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
+  "repository": "https://github.com/KagChi/kagchi-api.git",
   "keywords": [
     "wikihow",
     "coinflip"
   ],
   "author": "KagChi#2628",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "node-superfetch": "^0.1.10"
+    "node-superfetch": "^0.1.10",
+    "axios": "^0.19.2",
+    "@aero/centra" : "1.0.4"
   }
 }
