@@ -48,12 +48,11 @@ module.exports = class KagApi {
     return coronamemes;
   };
 
-async subreddit() {
-function reddit(string) { 
-if (typeof string !== "string") throw new TypeError("Type A Subreddit Please!"); 
-return string;
-};
-   const { body: subreddit } = await request.get(`https://imgur.com/r/${reddit(string)}/hot.json`);
+async subreddit(reddit) {
+if (!reddit) throw Error('Please enter subreddit');
+   const { body: subreddit } = await request.get('https://imgur.com/r/' + reddit + '/hot.json');
+  if (typeof reddit !== 'string') throw Error('The value of async function find isn\'t a string!');
+    
 const data = subreddit.data[Math.floor(Math.random() * 1000)];
 return data;
 };
