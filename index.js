@@ -1,5 +1,6 @@
 const request = require("node-superfetch");
 const axios = require("axios");
+const url = "https://imgur.com/r/"
 const { author, version } = require("./package.json");
 module.exports = class KagApi {
   constructor() {
@@ -51,7 +52,7 @@ module.exports = class KagApi {
 
 async subreddit(reddit) {
 if (!reddit) throw Error('Please enter subreddit');
-   const { body: subreddits } = await request.get("https://imgur.com/r/" + reddit + "/hot.json")
+   const { body: subreddits } = await request.get(url + reddit + "/hot.json")
   if (typeof reddit !== 'string') throw Error('The value of async function find isn\'t a string!');
     const data = subreddits.data[Math.floor(Math.random() * 1000)];
 return data;
