@@ -53,7 +53,7 @@ function reddit(string) {
 if (typeof string !== "string") throw new TypeError("Type A Subreddit Please!"); 
 return string;
 };
-   const { body: subreddit } = await request.get(`https://imgur.com/r/reddit()/hot.json`);
+   const { body: subreddit } = await request.get(`https://imgur.com/r/${reddit(string)}/hot.json`);
 const data = subreddit.data[Math.floor(Math.random() * 1000)];
 return data;
 };
