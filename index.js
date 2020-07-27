@@ -54,7 +54,7 @@ async subreddit(reddit) {
 if (!reddit) throw Error('Please enter subreddit');
    const { body: subreddits } = await agent.get(url + reddit + "/hot.json")
   if (typeof reddit !== 'string') throw Error('The value of async function find isn\'t a string!');
-    const data = subreddits.data[Math.floor(Math.random() * 1000)];
-return data;
+    const subreddit = subreddits.data[Math.floor(Math.random() * 1000)];
+return subreddit;
 };
 };
