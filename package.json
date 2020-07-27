@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "repository": "https://github.com/KagChi/kagchi-api.git",
   "keywords": [
     "wikihow",
     "coinflip"
