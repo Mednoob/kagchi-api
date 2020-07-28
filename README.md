@@ -9,11 +9,9 @@ yarn add @kagchi/kag-api
 <details>
 <summary>Changelog</summary>
 <br>
-  Changelog V1.0.6
-  <ul><li>Added memes</li>
-  <li>Added indonesia memes</li>
-  <li>Added dankmemes</li>
-  <li>Added coronamemes</li></ul>
+  Changelog V1.1.2-dev
+  <ul>
+  <li>Added Subreddit</li></ul>
 </details>
 
 ## Usage
@@ -95,3 +93,4 @@ msg.channel.send(`http://imgur.com/${meme.hash}.jpg`)
 2. coinflip
 3. Random Users
 4. Random Memes
+5. Subreddit
