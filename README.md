@@ -3,7 +3,6 @@
 To Use Api Install Package First
 ```bash
 npm install @kagchi/kag-api
-yarn add @kagchi/kag-api
 ```
 
 <details>
