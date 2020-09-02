@@ -50,7 +50,7 @@ module.exports = class KagApi {
 
 async subreddit(reddit) {
 if (!reddit) throw Error('Please enter subreddit');
-   const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit" + reddit)
+   const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
 return subreddit;
 };
 };
