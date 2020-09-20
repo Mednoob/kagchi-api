@@ -8,37 +8,33 @@ npm install @kagchi/kag-api
 <details>
 <summary>Changelog</summary>
 <br>
-  Changelog V1.1.2-dev
+  Changelog V1.1.6-dev
   <ul>
-  <li>Added Subreddit</li></ul>
+  <li>No More Constructor!</li></ul>
 </details>
 
 ## Usage
 ### Random Wikihow
 ```javascript
-const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
-
+const kagApi = require("@kagchi/kag-api")
 (async() => {
-const wikihow = await api.wikihow()
+const wikihow = await kagApi.wikihow()
  console.log(wikihow)
 }()
 ```
 ### Coinflip
 ```js
-const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
+const kagApi = require("@kagchi/kag-api")
 (async() => {
-const coinflip = await api.coin()
+const coinflip = await kagApi.coin()
 console.log(coinflip)
-}()
+})()
 ```
 ### Random Users
 ```js
-const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
+const kagApi = require("@kagchi/kag-api")
 (async() => {
-const users = await api.user()
+const users = await kagApi.user()
 console.log(users)
 }()
 ```
@@ -47,10 +43,8 @@ console.log(users)
 ### Random Wikihow
 ```js
 const { MessageEmbed } = require("discord.js")
-const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
-
-const wikihow = await api.wikihow()
+const kagApi = require("@kagchi/kag-api")
+const wikihow = await kagApi.wikihow()
 const embed = new MessageEmbed()
 .setTitle(wikihow.title)
 .setImage(wikihow.url)
@@ -59,8 +53,7 @@ msg.channel.send(embed)
 ### Coinflip
 ```js
 const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
-const coinflip = await api.coin()
+const coinflip = await kagApi.coin()
 msg.channel.send(`${coinflip.coin_image}`)
 //coinflip.coin_image => get coin image
 //coinflip.coin => Tail/Head
@@ -68,8 +61,7 @@ msg.channel.send(`${coinflip.coin_image}`)
 ### Random Users
 ```js
 const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
-const users = await api.user()
+const users = await kagApi.user()
 msg.channel.send(`${users.name}`)
 //api.surname => Get Surname
 //api.addres => Get Address
@@ -80,8 +72,7 @@ msg.channel.send(`${users.name}`)
 ### Memes
 ```js
 const KagApi = require("@kagchi/kag-api")
-const api = new KagApi()
-const meme = await api.memes()
+const meme = await kagApi.memes()
 msg.channel.send(`http://imgur.com/${meme.hash}.jpg`)
 //api.dankmemes()
 //api.indonesia()
