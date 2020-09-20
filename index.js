@@ -2,6 +2,7 @@ const request = require("node-superfetch");
 const { author, version } = require("./package.json");
 let loli = require("./endpoints/loli.js");
 let anime = require("./endpoints/anime.js");
+let waifu = require("./endpoints/waifu.js");
   async wikihow() {
     const { body: wikihow } = await request.get(
       "https://kagchi-api.glitch.me/wikihow"
@@ -50,4 +51,4 @@ let anime = require("./endpoints/anime.js");
       const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
     return subreddit;
   };
-module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli, anime }
+module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli, anime, waifu }
