@@ -1,35 +1,35 @@
 const axios = require("axios")
 
- async baka() {
+ async function baka() {
    const data = await axios.get("https://nekos.life/api/v2/img/baka").then(res => res.url)
   return data;
 }
 
- async pat() {
+ async function pat() {
    const data = await axios.get("https://nekos.life/api/v2/img/pat").then(res => res.url)
   return data;
 }
 
- async feed() {
+ async function feed() {
    const data = await axios.get("https://nekos.life/api/v2/img/feed").then(res => res.url)
   return data;
 }
- async trap() {
+ async function trap() {
     const data = await axios.get("https://nekos.life/api/v2/img/trap").then(res => res.url)
    return data;
 }
 
- async poke() {
+ async function poke() {
     const data = await axios.get("https://nekos.life/api/v2/img/poke").then(res => res.url)
    return data;
 }
  
- async kiss() {
+ async function kiss() {
     const data = await axios.get("https://nekos.life/api/v2/img/kiss").then(res => res.url)
    return data;
 }
 
- async cuddle() {
+ async function cuddle() {
     const data = await axios.get("https://nekos.life/api/v2/img/cuddle").then(res => res.url)
    return data;
 }
