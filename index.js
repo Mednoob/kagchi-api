@@ -1,6 +1,7 @@
 const request = require("node-superfetch");
 const { author, version } = require("./package.json");
 let loli = require("./endpoints/loli.js");
+let anime = require("./endpoints/anime.js");
   async wikihow() {
     const { body: wikihow } = await request.get(
       "https://kagchi-api.glitch.me/wikihow"
