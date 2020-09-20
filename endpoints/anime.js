@@ -35,9 +35,13 @@ const axios = require("axios")
 }
 
  async function search(query) {
-      if (!query) throw Error('Please enter anime name');
      const data = await axios.get("https://api.jikan.moe/v3/search/anime?q=" + query).then(res => res.data.results)
+    return data;
+ }
+
+async function hug() {
+    const data = await axios.get("https://nekos.life/api/v2/img/hug").then(res => res.url)
     return data;
 }
 
-module.exports = { baka, pat, feed, trap, poke, kiss, cuddle, search }
+module.exports = { baka, pat, feed, trap, poke, kiss, cuddle, search, hug }
