@@ -49,4 +49,4 @@ let loli = require("./endpoints/loli.js");
       const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
     return subreddit;
   };
-module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version }
+module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli }
