@@ -19,5 +19,8 @@ async function pat() {
    const data = await axios.get("https://api.lolis.life/pat").then(res => res.data.url)
   return data;
 }
-
-module.exports = { kawaii, random, neko, pat }
+async function kaede() {
+   const data = await axios.get("https://nezumiyuiz.glitch.me/api/kaede").then(res => res.data.url)
+  return data;
+} 
+module.exports = { kawaii, random, neko, pat, kaede }
