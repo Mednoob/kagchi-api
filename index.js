@@ -57,5 +57,7 @@ memeindo,
 memes,
 dankmemes,
 coronamemes,
-subreddit
+subreddit,
+author,
+version
 }
