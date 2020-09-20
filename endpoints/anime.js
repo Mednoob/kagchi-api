@@ -37,6 +37,6 @@ const axios = require("axios")
  async function search(query) {
      const data = await axios.get("https://api.jikan.moe/v3/search/anime?q=" + query).then(res => res.data.results)
     return data;
- }
+}
 
 module.exports = { baka, pat, feed, trap, poke, kiss, cuddle, search }
