@@ -35,6 +35,7 @@ const axios = require("axios")
 }
 
  async function search(query) {
+      if (!query) throw Error('Please enter anime name');
      const data = await axios.get("https://api.jikan.moe/v3/search/anime?q=" + query).then(res => res.data.results)
     return data;
 }
