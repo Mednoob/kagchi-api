@@ -44,9 +44,9 @@ let loli = require("./endpoints/loli.js");
     return coronamemes;
   };
 
-async subreddit(reddit) {
-if (!reddit) throw Error('Please enter subreddit');
-   const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
-return subreddit;
-};
+   async subreddit(reddit) {
+     if (!reddit) throw Error('Please enter subreddit');
+      const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
+    return subreddit;
+  };
 module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version }
