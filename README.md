@@ -20,7 +20,7 @@ const kagApi = require("@kagchi/kag-api")
 (async() => {
 const wikihow = await kagApi.wikihow()
  console.log(wikihow)
-}()
+})()
 ```
 ### Coinflip
 ```js
@@ -36,7 +36,7 @@ const kagApi = require("@kagchi/kag-api")
 (async() => {
 const users = await kagApi.user()
 console.log(users)
-}()
+})()
 ```
 ## Usage For Discord.js
   
