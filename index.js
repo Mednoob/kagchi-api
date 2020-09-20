@@ -51,4 +51,4 @@ let waifu = require("./endpoints/waifu.js");
       const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
     return subreddit;
   };
-module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli, anime, waifu }
+module.exports = { wikihow, coin, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli, anime, waifu }
