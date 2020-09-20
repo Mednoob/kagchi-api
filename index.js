@@ -1,10 +1,5 @@
 const request = require("node-superfetch");
 const { author, version } = require("./package.json");
-module.exports = class KagApi {
-  constructor() {
-    this.version = version;
-    this.author = author;
-  }
   async wikihow() {
     const { body: wikihow } = await request.get(
       "https://kagchi-api.glitch.me/wikihow"
@@ -53,4 +48,14 @@ if (!reddit) throw Error('Please enter subreddit');
    const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
 return subreddit;
 };
-};
+
+module.exports = {
+wikihow,
+coin,
+userinfo,
+memeindo,
+memes,
+dankmemes,
+coronamemes,
+subreddit
+}
