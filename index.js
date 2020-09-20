@@ -50,4 +50,4 @@ let anime = require("./endpoints/anime.js");
       const { body: subreddit } = await request.get("https://kagchi-api.glitch.me/subreddit/" + reddit)
     return subreddit;
   };
-module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli }
+module.exports = { wikihow, coin, userinfo, memeindo, memes, dankmemes, coronamemes, subreddit, author, version ,loli, anime }
